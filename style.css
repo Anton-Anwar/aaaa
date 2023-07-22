@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    min-height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    display: flex;
+}
+
+main, .left, .daniel-and-johnathan, .jeanetee-and-patrick, .daniel-clifford-head,.johnathan-walters-head, .jeanette-harmon-head, .patrick-abrams-head, .kira-whitte-head {
+    display: flex;
+    column-gap: 30px;
+}
+
+.left{
+    flex-direction: column;
+    row-gap: 30px;
+    width: 75%;
+}
+
+.daniel-clifford{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position:75% 0%;
+    padding: 35px;
+    border-radius: 10px;
+    width: 70%;
+    
+}
+
+.daniel-and-johnathan{
+    background-color:
+    height: 50%;
+}
+
+.jeanetee-and-patrick{
+    height: 50%;
+}
+
+.daniel-clifford-head-img{
+    height: 56px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.johnathan-walters{
+    background-color: hsl(217, 19%, 35%);
+    padding: 35px;
+    border-radius: 10px;
+    width: 30%;
+    
+}
+
+.johnathan-walters-head-img{
+    height: 56px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.jeanette-harmon{
+    background-color: hsl(0, 0%, 100%);
+    padding: 35px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+}
+
+.jeanette-harmon-head-img{
+    height: 56px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.patrick-abrams{
+    background-color: hsl(219, 29%, 14%);
+    padding: 35px;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+}
+
+.patrick-abrams-head-img{
+    height: 56px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.kira-whitte{
+    padding: 35px;
+    border-radius: 10px;
+    width: 25%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 100%
+}
+
+.kira-whitte-head-img{
+    height: 56px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.daniel-clifford-head,.johnathan-walters-head, .jeanette-harmon-head, .patrick-abrams-head, .kira-whitte-head {
+    padding-top: 20px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1px;
+}
+
+.daniel-clifford-head-name, .johnathan-walters-head-name, .jeanette-harmon-head-name, .patrick-abrams-head-name, .kira-whitte-head-name{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.daniel-clifford-head-name, .johnathan-walters-head-name, .patrick-abrams-head-name{
+    color: hsl(0, 0%, 100%);
+}
+
+.jeanette-harmon-head-name, .kira-whitte-head-name{
+    color: hsl(219, 29%, 14%);
+}
+
+.daniel-clifford-head-name span, .johnathan-walters-head-name span, .patrick-abrams-head-name span, .jeanette-harmon-head-name span, .kira-whitte-head-name span{
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+
+}
+
+.daniel-clifford-title, .johnathan-walters-title, .patrick-abrams-title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-bottom: 20px;
+}
+
+.jeanette-harmon-title, .kira-whitte-title{
+    color: hsl(219, 29%, 14%);
+    font-weight: 600;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin-bottom: 20px;
+}
+
+.daniel-clifford-description, .johnathan-walters-description, .patrick-abrams-description, .jeanette-harmon-description, .kira-whitte-description{
+    color: hsl(0, 0%, 81%);
+    font-weight: 500;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    main, .daniel-and-johnathan, .jeanetee-and-patrick{
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;  
+    }
+
+    .daniel-clifford,.johnathan-walters, .jeanette-harmon, .patrick-abrams {
+       width:90vw
+    }
+    .kira-whitte{
+        width: 100%;
+        
+    }
+    main{
+        padding: 0%;
+        margin-bottom: 40px;
+                
+    }
+
+    .left{
+        width:100%;
+        row-gap: 0;
+        margin-top: 40px;
+        
+    }
+    
+    .jeanetee-and-patrick{
+        margin-top: 20px;
+    }
+    
+
+    .kira-whitte{
+        width: 90vw;
+        margin-bottom: 40px;
+
+    }
+}
